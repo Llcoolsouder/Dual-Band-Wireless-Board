@@ -1,0 +1,13 @@
+(module D_0201 (layer F.Cu) (tedit 59F1279C)
+  (fp_text reference D** (at 0 1) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value D_0201 (at 0 -1.5) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text user + (at 0.8 -0.35) (layer F.SilkS)
+    (effects (font (size 0.75 0.75) (thickness 0.05)))
+  )
+  (pad 1 smd rect (at 0 0) (size 0.28 0.3) (layers F.Cu F.Paste F.Mask))
+  (pad 2 smd rect (at 0.39 0) (size 0.28 0.3) (layers F.Cu F.Paste F.Mask))
+)
