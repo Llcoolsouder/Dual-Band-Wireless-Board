@@ -1,4 +1,4 @@
-update=10/27/2017 9:25:40 PM
+update=11/1/2017 10:26:43 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -138,8 +138,6 @@ LibName127=E:/Program Files/KiCad/share/kicad/library/kicad-library/library/xili
 LibName128=E:/Program Files/KiCad/share/kicad/library/kicad-library/library/zetex
 LibName129=E:/Program Files/KiCad/share/kicad/library/kicad-library/library/Zilog
 LibName130=E:/Program Files/KiCad/share/kicad/library/MyLib
-[general]
-version=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -159,3 +157,5 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
+[general]
+version=1
