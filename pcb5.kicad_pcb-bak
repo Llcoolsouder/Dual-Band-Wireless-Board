@@ -38,7 +38,7 @@
 
   (setup
     (last_trace_width 0.25)
-    (trace_clearance 0.1)
+    (trace_clearance 0.05)
     (zone_clearance 0.508)
     (zone_45_only no)
     (trace_min 0.2)
@@ -142,7 +142,7 @@
   (net 48 "Net-(R25-Pad1)")
 
   (net_class Default "This is the default net class."
-    (clearance 0.1)
+    (clearance 0.05)
     (trace_width 0.25)
     (via_dia 0.6)
     (via_drill 0.4)
@@ -3756,7 +3756,7 @@
   (segment (start 137.033 125.222) (end 137.0294 125.1891) (width 0.25) (layer F.Cu) (net 36) (tstamp 5A10FDAE) (status 80000))
   (segment (start 137.0294 125.1891) (end 127.96 125.1891) (width 0.25) (layer F.Cu) (net 36))
   (segment (start 127.96 125.1891) (end 127.8382 125.3109) (width 0.25) (layer F.Cu) (net 36) (tstamp 5A10DE92))
-  (segment (start 137.0294 124.5391) (end 137.9064 124.5391) (width 0.25) (layer F.Cu) (net 37) (status 400000))
+  (segment (start 137.0294 124.5391) (end 137.9064 124.5391) (width 0.25) (layer F.Cu) (net 37))
   (segment (start 145.669 113.03) (end 138.176 120.523) (width 0.25) (layer F.Cu) (net 37) (status 80000))
   (segment (start 145.669 112.522) (end 145.669 113.03) (width 0.25) (layer F.Cu) (net 37) (status 80000))
   (segment (start 145.669 112.522) (end 146.304 111.887) (width 0.25) (layer F.Cu) (net 37) (status 80000))
