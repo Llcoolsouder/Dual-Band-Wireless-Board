@@ -36,48 +36,23 @@ LIBS:Battery_Management
 LIBS:bbd
 LIBS:bosch
 LIBS:brooktre
-LIBS:Connector
 LIBS:dc-dc
 LIBS:Diode
 LIBS:Display
-LIBS:driver_gate
-LIBS:DSP_Microchip_DSPIC33
 LIBS:elec-unifil
 LIBS:ESD_Protection
-LIBS:Espressif
-LIBS:FPGA_Actel
 LIBS:ftdi
 LIBS:gennum
-LIBS:Graphic
 LIBS:hc11
 LIBS:infineon
 LIBS:intersil
 LIBS:ir
 LIBS:Lattice
-LIBS:LED
 LIBS:LEM
-LIBS:Logic_74xgxx
-LIBS:Logic_74xx
-LIBS:Logic_CMOS_4000
-LIBS:Logic_CMOS_IEEE
 LIBS:logic_programmable
-LIBS:Logic_TTL_IEEE
 LIBS:maxim
-LIBS:MCU_Microchip_PIC10
-LIBS:MCU_Microchip_PIC12
-LIBS:MCU_Microchip_PIC16
-LIBS:MCU_Microchip_PIC18
-LIBS:MCU_Microchip_PIC24
-LIBS:MCU_Microchip_PIC32
-LIBS:MCU_NXP_Kinetis
-LIBS:MCU_NXP_LPC
-LIBS:MCU_NXP_S08
-LIBS:MCU_ST_STM8
-LIBS:MCU_ST_STM32
-LIBS:MCU_Texas_MSP430
 LIBS:Mechanical
 LIBS:modules
-LIBS:Motor
 LIBS:motor_drivers
 LIBS:nordicsemi
 LIBS:nxp
@@ -87,18 +62,12 @@ LIBS:Power_Management
 LIBS:powerint
 LIBS:pspice
 LIBS:references
-LIBS:Relay
 LIBS:rfcom
 LIBS:RFSolutions
-LIBS:Sensor_Current
 LIBS:sensors
 LIBS:silabs
 LIBS:supertex
-LIBS:Switch
-LIBS:Transformer
-LIBS:Transistor
 LIBS:triac_thyristor
-LIBS:Valve
 LIBS:video
 LIBS:wiznet
 LIBS:Worldsemi
@@ -256,12 +225,12 @@ $EndComp
 $Comp
 L D_Schottky D1
 U 1 1 59EB786E
-P 10450 3750
-F 0 "D1" H 10450 3850 50  0000 C CNN
-F 1 "SMS7630-061" H 10450 3650 50  0000 C CNN
-F 2 "MyLib:D_0201" H 10450 3750 50  0001 C CNN
-F 3 "" H 10450 3750 50  0001 C CNN
-	1    10450 3750
+P 10550 3750
+F 0 "D1" H 10550 3850 50  0000 C CNN
+F 1 "SMS7630-061" H 10400 3650 50  0000 C CNN
+F 2 "MyLib:D_0201" H 10550 3750 50  0001 C CNN
+F 3 "" H 10550 3750 50  0001 C CNN
+	1    10550 3750
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -506,12 +475,12 @@ DVCC
 $Comp
 L Conn_01x01_Male J7
 U 1 1 59F2BCE3
-P 10450 4550
-F 0 "J7" H 10400 4550 50  0000 C CNN
-F 1 "Conn_01x01_Male" H 10450 4650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 10450 4550 50  0001 C CNN
-F 3 "" H 10450 4550 50  0001 C CNN
-	1    10450 4550
+P 10600 4500
+F 0 "J7" H 10550 4500 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 10600 4600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 10600 4500 50  0001 C CNN
+F 3 "" H 10600 4500 50  0001 C CNN
+	1    10600 4500
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -540,7 +509,7 @@ F 3 "" H 3150 3300 60  0001 C CNN
 	1    3150 3300
 	1    0    0    -1  
 $EndComp
-Text Label 10250 3850 3    60   ~ 0
+Text Label 10400 4050 3    60   ~ 0
 DataOut
 Text Label 3550 3050 0    30   ~ 0
 DataOut
@@ -1248,8 +1217,6 @@ Wire Wire Line
 Wire Wire Line
 	1150 3250 2750 3250
 Wire Wire Line
-	1150 3550 1650 3550
-Wire Wire Line
 	1200 2600 1200 1950
 Wire Wire Line
 	1250 2600 1200 2600
@@ -1262,9 +1229,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 4450 7450 4450
 Wire Wire Line
-	10600 3750 11000 3750
-Wire Wire Line
-	10100 3750 10300 3750
+	10700 3750 11000 3750
 Wire Wire Line
 	10100 3450 10100 3750
 Wire Wire Line
@@ -1361,8 +1326,7 @@ Wire Wire Line
 Wire Wire Line
 	1150 2500 1250 2500
 Wire Wire Line
-	10250 3750 10250 4550
-Connection ~ 10250 3750
+	10400 3750 10400 4500
 Wire Wire Line
 	1300 2000 1350 2000
 Wire Wire Line
@@ -1725,4 +1689,18 @@ F 3 "" H 9200 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 9200 3800
+$Comp
+L C C24
+U 1 1 5A1DC42E
+P 10250 3750
+F 0 "C24" H 10275 3850 50  0001 L CNN
+F 1 "1u" H 10275 3650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 10288 3600 50  0001 C CNN
+F 3 "" H 10250 3750 50  0001 C CNN
+	1    10250 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 3550 1650 3550
+Connection ~ 1400 3550
 $EndSCHEMATC
